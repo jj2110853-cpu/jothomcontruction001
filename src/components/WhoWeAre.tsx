@@ -22,7 +22,7 @@ const WhoWeAre = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-32 px-6 bg-[#0a0a0a]">
+    <section id="who-we-are" ref={sectionRef} className="relative py-32 px-6 bg-[#0a0a0a]">
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]" />
 
       <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
