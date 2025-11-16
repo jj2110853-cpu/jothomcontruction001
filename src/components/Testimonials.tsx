@@ -4,8 +4,11 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     name: 'Rachemula Sipho',
-    title: '',
-    image: '',
+    rating: 5,
+  },
+  {
+    name: 'Melissa',
+    rating: 4,
   },
 ];
 
@@ -64,7 +67,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
@@ -79,7 +82,7 @@ const Testimonials = () => {
                 <div className="absolute top-0 left-8 w-16 h-1 bg-[#c72c7e] transform -translate-y-1/2" />
 
                 <div className="flex gap-1 mb-6">
-                  {[...Array(5)].map((_, i) => (
+                  {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-[#00a4b8] text-[#00a4b8]" />
                   ))}
                 </div>
